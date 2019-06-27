@@ -13,30 +13,38 @@
                             {{csrf_field()}}
                             <div class="form-group">
                         <label for="exampleInputEmail1">Nama</label>
-                        <input name="nama" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan Nama Anda">
+                        <input name="nama" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan Nama Anda"value="{{$mhs->absensi}}">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">jenis kelamin</label>
-                        <input name="jenis_elamin" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="kelas">
+                         <label for="exampleFormControlSelect1">Jenis kelamin</label>
+                         <select name="jenis_kelamin" class="form-control" id="exampleFormControlSelect1">
+                         <option value="L" @if($mhs->jenis_kelamin == 'L')selected @endif>Laki-Laki</option>
+                         <option value="p" @if($mhs->jenis_kelamin == 'p')selected @endif>Perempuan</option>
+                         </select>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Jurusan</label>
-                        <input name="jurusan" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Jurusan">
+                        <input name="jurusan" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Jurusan"value="{{$mhs->absensi}}">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1"> semester</label>
-                        <input name="semester" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Alat yang mau dipinjam">
+                        <input name="semester" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Semester"value="{{$mhs->absensi}}">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1"> alamat</label>
-                        <input name="alamat" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Alat yang mau dipinjam">
+                        <input name="alamat" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Alamat"value="{{$mhs->absensi}}">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1"> umur</label>
-                        <input name="umur" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Alat yang mau dipinjam">
+                        <input name="umur" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Umur"value="{{$mhs->absensi}}">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1"> absensi</label>
-                        <input name="absensi" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Alat yang mau dipinjam">
+                        <input name="absensi" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Isi Nomor Absen" value="{{$mhs->absensi}}">
+                    </div>
+                    </div>
+                            <button type="submit" class="btn btn-warning">Update</button>
+                         </form>
+                         </div>
                     </div>
 @endsection

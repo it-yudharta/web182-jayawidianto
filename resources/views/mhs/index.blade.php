@@ -63,11 +63,14 @@
                     {{csrf_field()}}
                     <div class="form-group">
                         <label for="exampleInputEmail1">Nama</label>
-                        <input name="nama" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan Nama Anda">
+                        <input name="nama" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">jenis kelamin</label>
-                        <input name="jenis_elamin" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="kelas">
+                         <label for="exampleFormControlSelect1">Jenis kelamin</label>
+                         <select name="jenis_kelamin" class="form-control" id="exampleFormControlSelect1">
+                         <option value="L">Laki-Laki</option>
+                         <option value="P">Perempuan</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Jurusan</label>
@@ -75,19 +78,19 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1"> semester</label>
-                        <input name="semester" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Alat yang mau dipinjam">
+                        <input name="semester" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Semester">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1"> alamat</label>
-                        <input name="alamat" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Alat yang mau dipinjam">
+                        <input name="alamat" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Alamat">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1"> umur</label>
-                        <input name="umur" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Alat yang mau dipinjam">
+                        <input name="umur" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Umur">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1"> absensi</label>
-                        <input name="absensi" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Alat yang mau dipinjam">
+                        <input name="absensi" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Abseni">
                     </div>
                     
                     

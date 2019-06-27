@@ -15,11 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/mhs','mhsController@index');
-Route::post('/mhs/create','mhsController@create');
-Route::get('/mhs/{id}/edit','mhsController@edit');
-Route::post('/mhs/{id}/update','mhsController@update');
-Route::get('/mhs/{id}/delete','mhsController@delete');
+Route::get('/mhs','MhsController@index');
+Route::post('/mhs/create','MhsController@create');
+Route::get('/mhs/{id}/edit','MhsController@edit');
+Route::post('/mhs/{id}/update','MhsController@update');
+Route::get('/mhs/{id}/delete','MhsController@delete');
 
 Auth::routes();
 
